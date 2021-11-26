@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Портфолио</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__container">
+				<nav class="header__nav">
+					<a class="logo header__logo" href="./index.html"
+						><span lang="en">Web<span class="logo__part--dark">Studio</span></span></a
+					>
+					<ul class="header__nav-list list">
+						<li class="header__nav-item">
+							<a class="header__menu-link link" href="./index.html">Студия</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__menu-link current link" href="./portfolio.html">Портфолио</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__menu-link link" href="">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="contacts list">
+					<li class="contacts__item">
+						<a class="contacts__link link" href="mailto:info@devstudio.com">
+							<svg class="contacts__icon" height="12" width="16">
+								<use href="./images/icons.svg#icon-header-mail"></use>
+							</svg>
+							info@devstudio.com</a
+						>
+					</li>
+					<li class="contacts__item">
+						<a class="contacts__link link" href="tel:+380961111111">
+							<svg class="contacts__icon" height="16" width="10">
+								<use href="./images/icons.svg#icon-header-tel"></use>
+							</svg>
+							+38 096 111 11 11</a
+						>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<section class="portfolio section">
+				<div class="container">
+					<h1 class="portfolio-title visually-hidden">Наше портфолио</h1>
+					<ul class="list portfolio-list">
+						<li class="portfolio-list-item">
+							<button class="portfolio-btn btn btn-dark" type="button">Все</button>
+						</li>
+						<li class="portfolio-list-item">
+							<button class="portfolio-btn btn btn-dark" type="button">Веб-сайты</button>
+						</li>
+						<li class="portfolio-list-item">
+							<button class="portfolio-btn btn btn-dark" type="button">Приложения</button>
+						</li>
+						<li class="portfolio-list-item">
+							<button class="portfolio-btn btn btn-dark" type="button">Дизайн</button>
+						</li>
+						<li class="portfolio-list-item">
+							<button class="portfolio-btn btn btn-dark" type="button">Маркетинг</button>
+						</li>
+					</ul>
+					<ul class="portfolio-list-cards list">
+						<li class="portfolio-list-card">
+							<a href="" class="portfolio-list-card-link">
+								<div class="portfolio-list-card-img-container">
+									<img
+										class="portfolio-list-card-img"
+										src="./images/portfolio-1.jpg"
+										alt="Технокряк"
+										width="370"
+										height="294"
+									/>
+									<p class="portfolio-list-card-description">
+										Технокряк это современная площадка распространения коронавируса. Компании
+										используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+										конкурентов.
+									</p>
+								</div>
+								<div class="portfolio-list-card-text">
+									<h3 class="portfolio-item-title">Технокряк</h3>
+									<p class="portfolio-item-text">Веб-сайт</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-list-card">
+							<a href="" class="portfolio-list-card-link">
+								<div class="portfolio-list-card-img-container">
+									<img
+										class="portfolio-list-card-img"
+										src="./images/portfolio-2.jpg"
+										alt="Постер New Orlean vs Golden Star"
+										width="370"
+										height="294"
+									/>
+									<p class="portfolio-list-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
+									</p>
+								</div>
+								<div class="portfolio-list-card-text">
+									<h3 class="portfolio-item-title">
+										Постер <span lang="en">New Orlean vs Golden Star</span>
+									</h3>
+									<p class="portfolio-item-text">Дизайн</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-list-card">
+							<a href="" class="portfolio-list-card-link">
+								<div class="portfolio-list-card-img-container">
+									<img
+										class="portfolio-list-card-img"
+										src="./images/portfolio-3.jpg"
+										alt="Ресторан Seafood"
+										width="370"
+										height="294"
+									/>
+									<p class="portfolio-list-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
+									</p>
+								</div>
+								<div class="portfolio-list-card-text">
+									<h3 class="portfolio-item-title">Ресторан <span lang="en">Seafood</span></h3>
+									<p class="portfolio-item-text">Приложение</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-list-card">
+							<a href="" class="portfolio-list-card-link">
+								<div class="portfolio-list-card-img-container">
+									<img
+										class="portfolio-list-card-img"
+										src="./images/portfolio-4.jpg"
+										alt="Проект Prime"
+										width="370"
+										height="294"
+									/>
+									<p class="portfolio-list-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
+									</p>
+								</div>
+								<div class="portfolio-list-card-text">
+									<h3 class="portfolio-item-title">Проект <span lang="en">Prime</span></h3>
+									<p class="portfolio-item-text">Маркетинг</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-list-card">
+							<a href="" class="portfolio-list-card-link">
+								<div class="portfolio-list-card-img-container">
+									<img
+										class="portfolio-list-card-img"
+										src="./images/portfolio-5.jpg"
+										alt="Проект Boxes"
+										width="370"
+										height="294"
+									/>
+									<p class="portfolio-list-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
+									</p>
+								</div>
+								<div class="portfolio-list-card-text">
+									<h3 class="portfolio-item-title">Проект <span lang="en">Boxes</span></h3>
+									<p class="portfolio-item-text">Приложение</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-list-card">
+							<a href="" class="portfolio-list-card-link">
+								<div class="portfolio-list-card-img-container">
+									<img
+										class="portfolio-list-card-img"
+										src="./images/portfolio-6.jpg"
+										alt="Inspiration has no Borders"
+										width="370"
+										height="294"
+									/>
+									<p class="portfolio-list-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
+									</p>
+								</div>
+								<div class="portfolio-list-card-text">
+									<h3 class="portfolio-item-title" lang="en">Inspiration has no Borders</h3>
+									<p class="portfolio-item-text">Веб-сайт</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-list-card">
+							<a href="" class="portfolio-list-card-link">
+								<div class="portfolio-list-card-img-container">
+									<img
+										class="portfolio-list-card-img"
+										src="./images/portfolio-7.jpg"
+										alt="Издание Limited Edition"
+										width="370"
+										height="294"
+									/>
+									<p class="portfolio-list-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
+									</p>
+								</div>
+								<div class="portfolio-list-card-text">
+									<h3 class="portfolio-item-title">
+										Издание <span lang="en">Limited Edition</span>
+									</h3>
+									<p class="portfolio-item-text">Дизайн</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-list-card">
+							<a href="" class="portfolio-list-card-link">
+								<div class="portfolio-list-card-img-container">
+									<img
+										class="portfolio-list-card-img"
+										src="./images/portfolio-8.jpg"
+										alt="Проект LAB"
+										width="370"
+										height="294"
+									/>
+									<p class="portfolio-list-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
+									</p>
+								</div>
+								<div class="portfolio-list-card-text">
+									<h3 class="portfolio-item-title">Проект <span lang="en">LAB</span></h3>
+									<p class="portfolio-item-text">Маркетинг</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-list-card">
+							<a href="" class="portfolio-list-card-link">
+								<div class="portfolio-list-card-img-container">
+									<img
+										class="portfolio-list-card-img"
+										src="./images/portfolio-9.jpg"
+										alt="Growing Business"
+										width="370"
+										height="294"
+									/>
+									<p class="portfolio-list-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
+									</p>
+								</div>
+								<div class="portfolio-list-card-text">
+									<h3 class="portfolio-item-title" lang="en">Growing Business</h3>
+									<p class="portfolio-item-text">Приложение</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-container container">
+				<div class="footer-address-container">
+					<a class="logo footer-logo" href="./index.html"
+						><span lang="en">Web<span class="logo-light">Studio</span></span></a
+					>
+					<address class="footer-address">
+						<ul class="footer-list list">
+							<li class="footer-list-item">
+								<a
+									class="footer-map link"
+									href="https://goo.gl/maps/AyxEVt1A3nNoJQqk6"
+									target="_blank"
+									rel="noopener noreferrer"
+									>г. Киев, пр-т Леси Украинки, 26</a
+								>
+							</li>
+							<li class="footer-list-item">
+								<a class="footer-mail link" href="mailto:info@example.com">info@example.com</a>
+							</li>
+							<li class="footer-list-item">
+								<a class="footer-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+				<div class="footer-join-us">
+					<h2 class="footer-join-us-title">присоединяйтесь</h2>
+					<ul class="footer-join-us-list list">
+						<li class="footer-join-us-list-item">
+							<a class="footer-social-item-link social-item-link" href="">
+								<svg class="social-icon">
+									<use href="./images/icons.svg#icon-socials-insta"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-join-us-list-item">
+							<a class="footer-social-item-link social-item-link" href="">
+								<svg class="social-icon">
+									<use href="./images/icons.svg#icon-socials-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-join-us-list-item">
+							<a class="footer-social-item-link social-item-link" href="">
+								<svg class="social-icon">
+									<use href="./images/icons.svg#icon-socials-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-join-us-list-item">
+							<a class="footer-social-item-link social-item-link" href="">
+								<svg class="social-icon">
+									<use href="./images/icons.svg#icon-socials-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<form class="footer-mailing" action="#">
+					<p class="footer-mailing-title">подпишитесь на рассылку</p>
+					<span class="footer-mailing-wrapper">
+						<input class="footer-mailing-mail" type="email" placeholder="E-mail" name="mail" />
+						<button class="footer-mailing-btn btn btn-light" type="submit">
+							<span class="footer-mailing-wrap">
+								Подписаться
+								<svg class="footer-mailing-btn-icon">
+									<use href="./images/icons.svg#icon-footer-send"></use>
+								</svg>
+							</span>
+						</button>
+					</span>
+				</form>
+			</div>
+		</footer>
+	</body>
+</html>

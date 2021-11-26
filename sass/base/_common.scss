@@ -1,0 +1,40 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: var(--primary-text-color);
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.btn {
+	cursor: pointer;
+	font-family: inherit;
+	border: none;
+	background: none;
+}
+//Убирает нижний зазор строчного элемента, картинка не растягивается больше своего размера, высота сохраняет оригинальные пропорции
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
