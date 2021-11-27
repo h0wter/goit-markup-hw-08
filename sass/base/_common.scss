@@ -22,15 +22,17 @@ body {
 	list-style: none;
 }
 
-.link {
+a {
 	text-decoration: none;
 }
 
 .btn {
+	display: block;
+	padding: 0;
 	cursor: pointer;
 	font-family: inherit;
 	border: none;
-	background: none;
+	background-color: transparent;
 }
 //Убирает нижний зазор строчного элемента, картинка не растягивается больше своего размера, высота сохраняет оригинальные пропорции
 img {
