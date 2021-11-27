@@ -3,19 +3,18 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-left: -30px;
+		margin-bottom: -30px;
+	}
 }
 
 .advantages-item {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		width: calc(100% / 2 - 30px);
-
-		&:nth-child(odd) {
-			margin-right: 30px;
-		}
-
-		&:not(:last-child) {
-			margin-bottom: 30px;
-		}
+		margin-left: 30px;
+		margin-bottom: 30px;
 	}
 
 	@media screen and (min-width: 1200px) {
