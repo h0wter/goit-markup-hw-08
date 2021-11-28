@@ -29,13 +29,13 @@
 					>
 					<ul class="header__nav-list list">
 						<li class="header__nav-item">
-							<a class="header__menu-link link" href="./index.html">Студия</a>
+							<a class="header__menu-link " href="./index.html">Студия</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="header__menu-link current link" href="./portfolio.html">Портфолио</a>
+							<a class="header__menu-link current" href="./portfolio.html">Портфолио</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="header__menu-link link" href="">Контакты</a>
+							<a class="header__menu-link" href="">Контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -57,6 +57,48 @@
 						>
 					</li>
 				</ul>
+				<button class="header__button btn" data-menu-open>
+					<svg class="header__burger" height="40" width="40">
+						<use href="./images/icons.svg#icon-burger"></use>
+					</svg>
+				</button>
+				<div class="mobile-menu" data-menu>
+					<button class="mobile-menu__close btn" data-menu-close>
+						<svg class="" height="40" width="40">
+							<use href="./images/icons.svg#icon-backdrop-close"></use>
+						</svg>
+					</button>
+					<ul class="list">
+						<a href="./index.html" class="mobile-menu__link">Студия</a>
+						<a href="#" class="mobile-menu__link">Портфолио</a>
+						<a href="#" class="mobile-menu__link">Контакты</a>
+					</ul>
+					<div class="mobile-menu__wrap">
+						<ul class="list">
+							<li class="mobile-menu__item">
+								<a class="mobile-menu__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+							<li class="mobile-menu__item">
+								<a class="mobile-menu__contact link" href="mailto:info@devstudio.com">
+									info@devstudio.com</a>
+							</li>
+							</li>
+						</ul>
+						<ul class="mobile-menu__social-list list">
+							<li class="mobile-menu__social">
+								<a href="#" class="mobile-menu__social-link">Instagram</a>
+							</li>
+							<li class="mobile-menu__social">
+								<a href="#" class="mobile-menu__social-link">Twitter</a>
+							</li>
+							<li class="mobile-menu__social">
+								<a href="#" class="mobile-menu__social-link">Facebook</a>
+							</li>
+							<li class="mobile-menu__social">
+								<a href="#" class="mobile-menu__social-link">LinkedIn</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -84,13 +126,15 @@
 						<li class="portfolio-list-card">
 							<a href="" class="portfolio-list-card-link">
 								<div class="portfolio-list-card-img-container">
-									<img
-										class="portfolio-list-card-img"
-										src="./images/portfolio-1.jpg"
-										alt="Технокряк"
-										width="370"
-										height="294"
-									/>
+									<picture>
+									<source srcset="./images/portfolio/portfolio-1.webp 1x, ./images/portfolio/portfolio-1@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-1.jpg 1x, ./images/portfolio/portfolio-1@2x.jpg 2x" media="(max-width: 767px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-1-tablet.webp 1x, ./images/portfolio/portfolio-1-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-1-tablet.jpg 1x, ./images/portfolio/portfolio-1-tablet@2x.jpg 2x" media="(max-width: 1199px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-1-desktop.webp 1x, ./images/portfolio/portfolio-1-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-1-desktop.jpg 1x, ./images/portfolio/portfolio-1-desktop@2x.jpg 2x" media="(min-width: 1200px) type="image/jpeg"/>
+									<img src="./images/portfolio/portfolio-1.jpg" alt="Технокряк"/>
+									</picture>
 									<p class="portfolio-list-card-description">
 										Технокряк это современная площадка распространения коронавируса. Компании
 										используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -106,13 +150,15 @@
 						<li class="portfolio-list-card">
 							<a href="" class="portfolio-list-card-link">
 								<div class="portfolio-list-card-img-container">
-									<img
-										class="portfolio-list-card-img"
-										src="./images/portfolio-2.jpg"
-										alt="Постер New Orlean vs Golden Star"
-										width="370"
-										height="294"
-									/>
+									<picture>
+									<source srcset="./images/portfolio/portfolio-2.webp 1x, ./images/portfolio/portfolio-2@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-2.jpg 1x, ./images/portfolio/portfolio-2@2x.jpg 2x" media="(max-width: 767px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-2-tablet.webp 1x, ./images/portfolio/portfolio-2-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-2-tablet.jpg 1x, ./images/portfolio/portfolio-2-tablet@2x.jpg 2x" media="(max-width: 1199px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-2-desktop.webp 1x, ./images/portfolio/portfolio-2-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-2-desktop.jpg 1x, ./images/portfolio/portfolio-2-desktop@2x.jpg 2x" media="(min-width: 1200px) type="image/jpeg"/>
+									<img src="./images/portfolio/portfolio-2.jpg" alt="Постер New Orlean vs Golden Star"/>
+									</picture>
 									<p class="portfolio-list-card-description">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
 									</p>
@@ -127,14 +173,16 @@
 						</li>
 						<li class="portfolio-list-card">
 							<a href="" class="portfolio-list-card-link">
-								<div class="portfolio-list-card-img-container">
-									<img
-										class="portfolio-list-card-img"
-										src="./images/portfolio-3.jpg"
-										alt="Ресторан Seafood"
-										width="370"
-										height="294"
-									/>
+								<div class="portfolio-list-card-img-container">									
+									<picture>
+									<source srcset="./images/portfolio/portfolio-3.webp 1x, ./images/portfolio/portfolio-3@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-3.jpg 1x, ./images/portfolio/portfolio-3@2x.jpg 2x" media="(max-width: 767px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-3-tablet.webp 1x, ./images/portfolio/portfolio-3-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-3-tablet.jpg 1x, ./images/portfolio/portfolio-3-tablet@2x.jpg 2x" media="(max-width: 1199px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-3-desktop.webp 1x, ./images/portfolio/portfolio-3-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-3-desktop.jpg 1x, ./images/portfolio/portfolio-3-desktop@2x.jpg 2x" media="(min-width: 1200px) type="image/jpeg"/>
+									<img src="./images/portfolio/portfolio-3.jpg" alt="Ресторан Seafood"/>
+									</picture>
 									<p class="portfolio-list-card-description">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
 									</p>
@@ -148,13 +196,15 @@
 						<li class="portfolio-list-card">
 							<a href="" class="portfolio-list-card-link">
 								<div class="portfolio-list-card-img-container">
-									<img
-										class="portfolio-list-card-img"
-										src="./images/portfolio-4.jpg"
-										alt="Проект Prime"
-										width="370"
-										height="294"
-									/>
+									<picture>
+									<source srcset="./images/portfolio/portfolio-4.webp 1x, ./images/portfolio/portfolio-4@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-4.jpg 1x, ./images/portfolio/portfolio-4@2x.jpg 2x" media="(max-width: 767px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-4-tablet.webp 1x, ./images/portfolio/portfolio-4-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-4-tablet.jpg 1x, ./images/portfolio/portfolio-4-tablet@2x.jpg 2x" media="(max-width: 1199px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-4-desktop.webp 1x, ./images/portfolio/portfolio-4-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-4-desktop.jpg 1x, ./images/portfolio/portfolio-4-desktop@2x.jpg 2x" media="(min-width: 1200px) type="image/jpeg"/>
+									<img src="./images/portfolio/portfolio-4.jpg" alt="Проект Prime"/>
+									</picture>
 									<p class="portfolio-list-card-description">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
 									</p>
@@ -167,14 +217,16 @@
 						</li>
 						<li class="portfolio-list-card">
 							<a href="" class="portfolio-list-card-link">
-								<div class="portfolio-list-card-img-container">
-									<img
-										class="portfolio-list-card-img"
-										src="./images/portfolio-5.jpg"
-										alt="Проект Boxes"
-										width="370"
-										height="294"
-									/>
+								<div class="portfolio-list-card-img-container">									
+									<picture>
+									<source srcset="./images/portfolio/portfolio-5.webp 1x, ./images/portfolio/portfolio-5@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-5.jpg 1x, ./images/portfolio/portfolio-5@2x.jpg 2x" media="(max-width: 767px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-5-tablet.webp 1x, ./images/portfolio/portfolio-5-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-5-tablet.jpg 1x, ./images/portfolio/portfolio-5-tablet@2x.jpg 2x" media="(max-width: 1199px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-5-desktop.webp 1x, ./images/portfolio/portfolio-5-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-5-desktop.jpg 1x, ./images/portfolio/portfolio-5-desktop@2x.jpg 2x" media="(min-width: 1200px) type="image/jpeg"/>
+									<img src="./images/portfolio/portfolio-5.jpg" alt="Проект Boxes"/>
+									</picture>
 									<p class="portfolio-list-card-description">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
 									</p>
@@ -188,13 +240,15 @@
 						<li class="portfolio-list-card">
 							<a href="" class="portfolio-list-card-link">
 								<div class="portfolio-list-card-img-container">
-									<img
-										class="portfolio-list-card-img"
-										src="./images/portfolio-6.jpg"
-										alt="Inspiration has no Borders"
-										width="370"
-										height="294"
-									/>
+									<picture>
+									<source srcset="./images/portfolio/portfolio-6.webp 1x, ./images/portfolio/portfolio-6@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-6.jpg 1x, ./images/portfolio/portfolio-6@2x.jpg 2x" media="(max-width: 767px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-6-tablet.webp 1x, ./images/portfolio/portfolio-6-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-6-tablet.jpg 1x, ./images/portfolio/portfolio-6-tablet@2x.jpg 2x" media="(max-width: 1199px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-6-desktop.webp 1x, ./images/portfolio/portfolio-6-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-6-desktop.jpg 1x, ./images/portfolio/portfolio-6-desktop@2x.jpg 2x" media="(min-width: 1200px) type="image/jpeg"/>
+									<img src="./images/portfolio/portfolio-6.jpg" alt="Inspiration has no Borders"/>
+									</picture>
 									<p class="portfolio-list-card-description">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
 									</p>
@@ -208,13 +262,15 @@
 						<li class="portfolio-list-card">
 							<a href="" class="portfolio-list-card-link">
 								<div class="portfolio-list-card-img-container">
-									<img
-										class="portfolio-list-card-img"
-										src="./images/portfolio-7.jpg"
-										alt="Издание Limited Edition"
-										width="370"
-										height="294"
-									/>
+									<picture>
+									<source srcset="./images/portfolio/portfolio-7.webp 1x, ./images/portfolio/portfolio-7@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-7.jpg 1x, ./images/portfolio/portfolio-7@2x.jpg 2x" media="(max-width: 767px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-7-tablet.webp 1x, ./images/portfolio/portfolio-7-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-7-tablet.jpg 1x, ./images/portfolio/portfolio-7-tablet@2x.jpg 2x" media="(max-width: 1199px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-7-desktop.webp 1x, ./images/portfolio/portfolio-7-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-7-desktop.jpg 1x, ./images/portfolio/portfolio-7-desktop@2x.jpg 2x" media="(min-width: 1200px) type="image/jpeg"/>
+									<img src="./images/portfolio/portfolio-7.jpg" alt="Издание Limited Edition"/>
+									</picture>
 									<p class="portfolio-list-card-description">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
 									</p>
@@ -230,13 +286,15 @@
 						<li class="portfolio-list-card">
 							<a href="" class="portfolio-list-card-link">
 								<div class="portfolio-list-card-img-container">
-									<img
-										class="portfolio-list-card-img"
-										src="./images/portfolio-8.jpg"
-										alt="Проект LAB"
-										width="370"
-										height="294"
-									/>
+									<picture>
+									<source srcset="./images/portfolio/portfolio-8.webp 1x, ./images/portfolio/portfolio-8@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-8.jpg 1x, ./images/portfolio/portfolio-8@2x.jpg 2x" media="(max-width: 767px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-8-tablet.webp 1x, ./images/portfolio/portfolio-8-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-8-tablet.jpg 1x, ./images/portfolio/portfolio-8-tablet@2x.jpg 2x" media="(max-width: 1199px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-8-desktop.webp 1x, ./images/portfolio/portfolio-8-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-8-desktop.jpg 1x, ./images/portfolio/portfolio-8-desktop@2x.jpg 2x" media="(min-width: 1200px) type="image/jpeg"/>
+									<img src="./images/portfolio/portfolio-8.jpg" alt="Проект LAB"/>
+									</picture>
 									<p class="portfolio-list-card-description">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
 									</p>
@@ -249,14 +307,16 @@
 						</li>
 						<li class="portfolio-list-card">
 							<a href="" class="portfolio-list-card-link">
-								<div class="portfolio-list-card-img-container">
-									<img
-										class="portfolio-list-card-img"
-										src="./images/portfolio-9.jpg"
-										alt="Growing Business"
-										width="370"
-										height="294"
-									/>
+								<div class="portfolio-list-card-img-container">									
+									<picture>
+									<source srcset="./images/portfolio/portfolio-9.webp 1x, ./images/portfolio/portfolio-9@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-9.jpg 1x, ./images/portfolio/portfolio-9@2x.jpg 2x" media="(max-width: 767px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-9-tablet.webp 1x, ./images/portfolio/portfolio-9-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-9-tablet.jpg 1x, ./images/portfolio/portfolio-9-tablet@2x.jpg 2x" media="(max-width: 1199px) type="image/jpeg"/>
+									<source srcset="./images/portfolio/portfolio-9-desktop.webp 1x, ./images/portfolio/portfolio-9-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+									<source srcset="./images/portfolio/portfolio-9-desktop.jpg 1x, ./images/portfolio/portfolio-9-desktop@2x.jpg 2x" media="(min-width: 1200px) type="image/jpeg"/>
+									<img src="./images/portfolio/portfolio-9.jpg" alt="Growing Business"/>
+									</picture>
 									<p class="portfolio-list-card-description">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam.
 									</p>
@@ -273,7 +333,8 @@
 		</main>
 		<footer class="footer">
 			<div class="footer-container container">
-				<div class="footer-address-container">
+				<div class="footer-wrap">
+					<div class="footer-address-container">
 					<a class="logo footer-logo" href="./index.html"
 						><span lang="en">Web<span class="logo-light">Studio</span></span></a
 					>
@@ -330,6 +391,7 @@
 						</li>
 					</ul>
 				</div>
+				</div>
 				<form class="footer-mailing" action="#">
 					<p class="footer-mailing-title">подпишитесь на рассылку</p>
 					<span class="footer-mailing-wrapper">
@@ -346,5 +408,6 @@
 				</form>
 			</div>
 		</footer>
+		<script src="./js/header-menu.js"></script>
 	</body>
 </html>
