@@ -430,8 +430,8 @@ img {
 .contacts__link {
   display: flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   align-items: center;
@@ -444,6 +444,8 @@ img {
     padding-right: 0;
     padding-bottom: 32px;
     padding-left: 0;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -469,6 +471,30 @@ img {
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.contacts__icon-mail {
+  width: 14px;
+  height: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon-mail {
+    width: 12px;
+    height: 16px;
+  }
+}
+
+.contacts__icon-tel {
+  width: 10px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon-tel {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .header__button {
@@ -619,12 +645,13 @@ img {
   background-color: var(--dark-background);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 480px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-size: contain;
+    background-size: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet.jpg");
   }
 }
@@ -645,13 +672,14 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-size: contain;
+    background-size: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet@2x.jpg");
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
+    background-size: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop@2x.jpg");
   }
 }
