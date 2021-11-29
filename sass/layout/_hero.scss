@@ -3,11 +3,13 @@
 	background-color: var(--dark-background);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: 480px;
+	//margin: 0 auto;
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 		url('../images/hero/hero.jpg');
 
 	@media screen and (min-width: 768px) {
-		background-size: contain;
+		background-size: 768px;
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url('../images/hero/hero-tablet.jpg');
 	}
@@ -26,12 +28,13 @@
 			url('../images/hero/hero@2x.jpg');
 
 		@media screen and (min-width: 768px) {
-			background-size: contain;
+			background-size: 768px;
 			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 				url('../images/hero/hero-tablet@2x.jpg');
 		}
 
 		@media screen and (min-width: 1200px) {
+			background-size: 1600px;
 			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 				url('../images/hero/hero-desktop@2x.jpg');
 		}

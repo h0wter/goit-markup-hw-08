@@ -109,8 +109,8 @@
 .contacts__link {
 	display: flex;
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
+	font-size: 12px;
+	line-height: calc(14 / 12);
 	letter-spacing: 0.02em;
 	color: var(--secondary-text-color);
 
@@ -122,6 +122,8 @@
 		padding-right: 0;
 		padding-bottom: 32px;
 		padding-left: 0;
+		font-size: 14px;
+		line-height: 1.14;
 	}
 
 	&:hover,
@@ -150,6 +152,26 @@
 .contacts__icon {
 	margin-right: 10px;
 	fill: currentColor;
+}
+
+.contacts__icon-mail {
+	width: 14px;
+	height: 10px;
+
+	@media screen and (min-width: 1200px) {
+		width: 12px;
+		height: 16px;
+	}
+}
+
+.contacts__icon-tel {
+	width: 10px;
+	height: 14px;
+
+	@media screen and (min-width: 1200px) {
+		width: 10px;
+		height: 16px;
+	}
 }
 
 .header__button {
